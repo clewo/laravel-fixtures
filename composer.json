@@ -1,0 +1,39 @@
+{
+    "name": "clewo/laravel-fixtures",
+    "description": "Laravel Fixtures are used to load a 'fake' set of data into a database that can then be used for testing",
+    "type": "library",
+    "keywords": [
+        "Fixture"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Igor Chepurnoi",
+            "email": "chepurnoi.igor@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "illuminate/database": "~5.5.0|~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0",
+        "illuminate/support": "~5.5.0|~5.6.0|~5.7.0|~5.8.0|^6.0|^7.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "~2.0",
+        "phpunit/phpunit": "~6.0",
+        "orchestra/testbench": "~3.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Clewo\\Fixture\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Clewo\\Tests\\Fixture\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "cs": "php-cs-fixer fix --dry-run --diff"
+    }
+}
